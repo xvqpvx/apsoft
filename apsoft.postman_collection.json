@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "86a291fd-c17b-4ce0-b31b-d7437dc17570",
+		"name": "apsoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26737935"
+	},
+	"item": [
+		{
+			"name": "getFileById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/getFileById/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getFileById",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parseFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file\n",
+							"type": "file",
+							"src": "/C:/Users/vadim/IdeaProjects/apsoft/example.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/parseFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parseFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parseWithResult",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/vadim/IdeaProjects/apsoft/example.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/parseFileWithResult",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"parseFileWithResult"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
